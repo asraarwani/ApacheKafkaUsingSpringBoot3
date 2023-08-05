@@ -1,0 +1,57 @@
+{
+	"info": {
+		"_postman_id": "33fb7fba-970c-46f2-a2af-997bf43c79d1",
+		"name": "ApacheKafkaUsingSpringBoot3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Send Messge",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/message/send/Test Message From Postman",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"message",
+						"send",
+						"Test Message From Postman"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Send Detailed Message",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : 123,\r\n    \"name\" : \"Test\",\r\n    \"email\" : \"test.user@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/message/send",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"message",
+						"send"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

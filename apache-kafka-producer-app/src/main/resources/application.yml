@@ -1,0 +1,8 @@
+
+#Follwoing configuration is provided using java configuration
+#spring:
+#  kafka:
+#    producer:
+#      bootstrap-server : localhost:9092
+#      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+#      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
